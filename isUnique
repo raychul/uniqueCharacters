@@ -1,0 +1,15 @@
+def isUnique(string):
+    for index in range(len(string)):
+      if string[index] in string[index+1:]:
+        return False
+
+    return True
+
+def main():
+  string = input("Input a string: ")
+  if isUnique(string) == True:
+    print("This string is unique")
+  else:
+    print("This string isn't unique")
+            
+main()
